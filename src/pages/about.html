@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About DestroSolutions - Automotive Cybersecurity Leadership</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdestrosolu4102back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background font-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-card sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-auto" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0" y="8" width="32" height="24" rx="4" fill="#1a365d"/>
+                            <rect x="8" y="12" width="16" height="16" rx="2" fill="#38b2ac"/>
+                            <path d="M16 16L20 20L16 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <text x="40" y="26" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#1a365d">DestroSolutions</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">Home</a>
+                        <a href="about.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">About</a>
+                        <a href="product_suite_overview.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">Products</a>
+                        <a href="standards_and_compliance.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">Compliance</a>
+                        <a href="interactive_demo_center.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">Demo</a>
+                        <a href="contact.html" class="btn-primary">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-silver-200">
+                <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth block px-3 py-2 rounded-md text-base">Home</a>
+                <a href="about.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base">About</a>
+                <a href="product_suite_overview.html" class="text-text-secondary hover:text-primary transition-smooth block px-3 py-2 rounded-md text-base">Products</a>
+                <a href="standards_and_compliance.html" class="text-text-secondary hover:text-primary transition-smooth block px-3 py-2 rounded-md text-base">Compliance</a>
+                <a href="interactive_demo_center.html" class="text-text-secondary hover:text-primary transition-smooth block px-3 py-2 rounded-md text-base">Demo</a>
+                <a href="contact.html" class="btn-primary w-full text-center mt-4">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Company Mission -->
+    <section class="relative bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Mission Flow Lines -->
+                <path d="M0 400 Q300 200 600 400 T1200 400" stroke="#38b2ac" stroke-width="2" opacity="0.6"/>
+                <path d="M0 300 Q400 100 800 300 T1200 300" stroke="#4fd1c7" stroke-width="1.5" opacity="0.4"/>
+                <path d="M0 500 Q200 300 600 500 T1200 500" stroke="#38b2ac" stroke-width="1" opacity="0.3"/>
+                <!-- Vision Shield Pattern -->
+                <g transform="translate(900, 100)">
+                    <path d="M50 20 L80 35 L80 65 L50 80 L20 65 L20 35 Z" stroke="#4fd1c7" stroke-width="2" fill="none" opacity="0.5"/>
+                    <circle cx="50" cy="50" r="15" stroke="#38b2ac" stroke-width="1.5" fill="none" opacity="0.4"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center text-white">
+                <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Guardians of the
+                    <span class="text-accent">Software-Defined</span>
+                    Vehicle Revolution
+                </h1>
+                <p class="text-xl text-primary-100 mb-8 leading-relaxed max-w-4xl mx-auto">
+                    Where traditional automotive engineering meets AI-powered security intelligence. We're not just protecting data—we're safeguarding lives on the road through comprehensive ecosystem protection.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="btn-accent text-center">
+                        Partner With Us
+                    </a>
+                    <a href="product_suite_overview.html" class="bg-transparent border-2 border-accent text-accent font-semibold py-3 px-6 rounded-lg transition-smooth hover:bg-accent hover:text-primary text-center">
+                        Explore Our Solutions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Timeline -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-6">Our Journey in Automotive Cybersecurity</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    From pioneering research to industry leadership, our evolution mirrors the transformation of the automotive industry itself
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-secondary-200"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- 2018 - Foundation -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8 text-right">
+                            <div class="card p-6">
+                                <div class="text-secondary font-semibold text-lg mb-2">2018</div>
+                                <h3 class="text-xl font-bold text-primary mb-3">Foundation & Vision</h3>
+                                <p class="text-text-secondary">Founded by automotive security pioneers with a vision to protect the emerging software-defined vehicle ecosystem. Initial focus on CAN bus security research.</p>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-card"></div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+
+                    <!-- 2019 - First Product -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white shadow-card"></div>
+                        <div class="flex-1 pl-8">
+                            <div class="card p-6">
+                                <div class="text-accent font-semibold text-lg mb-2">2019</div>
+                                <h3 class="text-xl font-bold text-primary mb-3">First AI Solution Launch</h3>
+                                <p class="text-text-secondary">Launched Automator AI, the first machine learning-powered automotive threat detection system. Secured initial partnerships with Tier 1 suppliers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2020 - Industry Recognition -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8 text-right">
+                            <div class="card p-6">
+                                <div class="text-secondary font-semibold text-lg mb-2">2020</div>
+                                <h3 class="text-xl font-bold text-primary mb-3">Industry Recognition</h3>
+                                <p class="text-text-secondary">Achieved ASPICE Level 3 certification and established partnerships with major OEMs. Recognized as "Automotive Cybersecurity Innovator of the Year."</p>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-success rounded-full border-4 border-white shadow-card"></div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+
+                    <!-- 2022 - Platform Expansion -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white shadow-card"></div>
+                        <div class="flex-1 pl-8">
+                            <div class="card p-6">
+                                <div class="text-accent font-semibold text-lg mb-2">2022</div>
+                                <h3 class="text-xl font-bold text-primary mb-3">Complete Platform Launch</h3>
+                                <p class="text-text-secondary">Launched comprehensive six-product ecosystem including IDPS, vSOC, and OTA Updater. Reached 1 million vehicles protected milestone.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2024 - Global Leadership -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8 text-right">
+                            <div class="card p-6">
+                                <div class="text-secondary font-semibold text-lg mb-2">2024</div>
+                                <h3 class="text-xl font-bold text-primary mb-3">Global Market Leadership</h3>
+                                <p class="text-text-secondary">Protecting over 2.8 million vehicles globally. Established international presence with offices in Detroit, Stuttgart, and Tokyo.</p>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-card"></div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+
+                    <!-- 2025 - Future Vision -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-card animate-pulse"></div>
+                        <div class="flex-1 pl-8">
+                            <div class="card p-6 border-2 border-primary-200">
+                                <div class="text-primary font-semibold text-lg mb-2">2025 & Beyond</div>
+                                <h3 class="text-xl font-bold text-primary mb-3">Next-Generation Security</h3>
+                                <p class="text-text-secondary">Pioneering quantum-resistant cryptography and autonomous vehicle security frameworks. Leading the industry into the fully autonomous future.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="bg-gradient-to-br from-primary-50 to-secondary-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-6">Leadership Team</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Industry veterans combining decades of automotive engineering expertise with cutting-edge cybersecurity innovation
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- CEO -->
+                <div class="card p-8 text-center hover:scale-105 transition-smooth">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1732507463052-14dbc60899ee" 
+                             alt="Professional headshot of Dr. Sarah Chen, CEO and Co-Founder of DestroSolutions, automotive cybersecurity expert" 
+                             class="w-32 h-32 rounded-full mx-auto object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2'; this.onerror=null;">
+                        <div class="absolute -bottom-2 -right-2 bg-secondary text-white p-2 rounded-full">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Dr. Sarah Chen</h3>
+                    <p class="text-secondary font-semibold mb-3">CEO & Co-Founder</p>
+                    <p class="text-text-secondary text-sm mb-4">Former BMW Group Security Architect with 15+ years in automotive cybersecurity. PhD in Computer Science from MIT, specializing in automotive AI security.</p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-secondary-100 text-secondary px-2 py-1 rounded text-xs">CISSP</span>
+                        <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs">ASPICE Expert</span>
+                    </div>
+                </div>
+
+                <!-- CTO -->
+                <div class="card p-8 text-center hover:scale-105 transition-smooth">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1706697420556-232ec4e5d181" 
+                             alt="Professional headshot of Marcus Rodriguez, CTO and Co-Founder of DestroSolutions, automotive AI security specialist" 
+                             class="w-32 h-32 rounded-full mx-auto object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2'; this.onerror=null;">
+                        <div class="absolute -bottom-2 -right-2 bg-secondary text-white p-2 rounded-full">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Marcus Rodriguez</h3>
+                    <p class="text-secondary font-semibold mb-3">CTO & Co-Founder</p>
+                    <p class="text-text-secondary text-sm mb-4">Former Tesla Autopilot Security Lead with expertise in AI-powered threat detection. MS in Cybersecurity from Stanford, 12+ years in automotive software.</p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-secondary-100 text-secondary px-2 py-1 rounded text-xs">AI/ML Expert</span>
+                        <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs">AUTOSAR</span>
+                    </div>
+                </div>
+
+                <!-- VP Engineering -->
+                <div class="card p-8 text-center hover:scale-105 transition-smooth">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1705579607707-717fb965145f" 
+                             alt="Professional headshot of Dr. Priya Patel, VP of Engineering at DestroSolutions, automotive systems security expert" 
+                             class="w-32 h-32 rounded-full mx-auto object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2'; this.onerror=null;">
+                        <div class="absolute -bottom-2 -right-2 bg-secondary text-white p-2 rounded-full">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Dr. Priya Patel</h3>
+                    <p class="text-secondary font-semibold mb-3">VP of Engineering</p>
+                    <p class="text-text-secondary text-sm mb-4">Former Audi Connected Vehicle Security Director. PhD in Electrical Engineering from Carnegie Mellon, expert in embedded automotive security systems.</p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-secondary-100 text-secondary px-2 py-1 rounded text-xs">Embedded Systems</span>
+                        <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs">CSMS</span>
+                    </div>
+                </div>
+
+                <!-- VP Sales -->
+                <div class="card p-8 text-center hover:scale-105 transition-smooth">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1676245437710-235b3ad836a4" 
+                             alt="Professional headshot of James Mitchell, VP of Sales at DestroSolutions, automotive industry business development expert" 
+                             class="w-32 h-32 rounded-full mx-auto object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2'; this.onerror=null;">
+                        <div class="absolute -bottom-2 -right-2 bg-secondary text-white p-2 rounded-full">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">James Mitchell</h3>
+                    <p class="text-secondary font-semibold mb-3">VP of Sales</p>
+                    <p class="text-text-secondary text-sm mb-4">20+ years in automotive technology sales with Ford Motor Company and Continental AG. Expert in OEM relationship management and enterprise sales.</p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-secondary-100 text-secondary px-2 py-1 rounded text-xs">OEM Relations</span>
+                        <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs">Enterprise Sales</span>
+                    </div>
+                </div>
+
+                <!-- Chief Security Officer -->
+                <div class="card p-8 text-center hover:scale-105 transition-smooth">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1493882552576-fce827c6161e" 
+                             alt="Professional headshot of Dr. Elena Kowalski, Chief Security Officer at DestroSolutions, cybersecurity research specialist" 
+                             class="w-32 h-32 rounded-full mx-auto object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2'; this.onerror=null;">
+                        <div class="absolute -bottom-2 -right-2 bg-secondary text-white p-2 rounded-full">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Dr. Elena Kowalski</h3>
+                    <p class="text-secondary font-semibold mb-3">Chief Security Officer</p>
+                    <p class="text-text-secondary text-sm mb-4">Former NSA cybersecurity researcher with focus on critical infrastructure protection. PhD in Cryptography from Georgia Tech, automotive security pioneer.</p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-secondary-100 text-secondary px-2 py-1 rounded text-xs">Cryptography</span>
+                        <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs">Threat Research</span>
+                    </div>
+                </div>
+
+                <!-- VP Customer Success -->
+                <div class="card p-8 text-center hover:scale-105 transition-smooth">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1607316746546-a37547cd0cd2" 
+                             alt="Professional headshot of David Kim, VP of Customer Success at DestroSolutions, automotive client relationship expert" 
+                             class="w-32 h-32 rounded-full mx-auto object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2'; this.onerror=null;">
+                        <div class="absolute -bottom-2 -right-2 bg-secondary text-white p-2 rounded-full">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">David Kim</h3>
+                    <p class="text-secondary font-semibold mb-3">VP of Customer Success</p>
+                    <p class="text-text-secondary text-sm mb-4">Former Mercedes-Benz Digital Services Director with expertise in automotive customer experience and technical support operations.</p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-secondary-100 text-secondary px-2 py-1 rounded text-xs">Customer Success</span>
+                        <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs">Technical Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Values -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-6">Our Core Values</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    The principles that guide our mission to protect lives through automotive cybersecurity excellence
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Safety First -->
+                <div class="text-center p-8">
+                    <div class="w-20 h-20 bg-gradient-to-br from-error to-warning rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Safety First</h3>
+                    <p class="text-text-secondary leading-relaxed">
+                        Every decision we make prioritizes the safety of drivers, passengers, and pedestrians. We understand that automotive cybersecurity isn't just about protecting data—it's about protecting lives on the road.
+                    </p>
+                </div>
+
+                <!-- Proactive Defense -->
+                <div class="text-center p-8">
+                    <div class="w-20 h-20 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Proactive Defense</h3>
+                    <p class="text-text-secondary leading-relaxed">
+                        We believe in preventing threats before they materialize. Our AI-powered systems continuously learn and adapt, staying ahead of emerging attack vectors in the rapidly evolving automotive landscape.
+                    </p>
+                </div>
+
+                <!-- Intelligent Automation -->
+                <div class="text-center p-8">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Intelligent Automation</h3>
+                    <p class="text-text-secondary leading-relaxed">
+                        Human expertise enhanced by machine intelligence. Our solutions automate complex security processes while maintaining human oversight for critical decisions, ensuring both efficiency and reliability.
+                    </p>
+                </div>
+
+                <!-- Unwavering Reliability -->
+                <div class="text-center p-8">
+                    <div class="w-20 h-20 bg-gradient-to-br from-success to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Unwavering Reliability</h3>
+                    <p class="text-text-secondary leading-relaxed">
+                        Automotive systems demand 99.99% uptime. Our solutions are built with redundancy, failsafes, and continuous monitoring to ensure they perform flawlessly when lives depend on them.
+                    </p>
+                </div>
+
+                <!-- Continuous Learning -->
+                <div class="text-center p-8">
+                    <div class="w-20 h-20 bg-gradient-to-br from-accent to-success rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Continuous Learning</h3>
+                    <p class="text-text-secondary leading-relaxed">
+                        The automotive cybersecurity landscape evolves daily. We foster a culture of continuous learning, research, and adaptation to stay ahead of emerging threats and technologies.
+                    </p>
+                </div>
+
+                <!-- Partnership Excellence -->
+                <div class="text-center p-8">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary-600 to-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Partnership Excellence</h3>
+                    <p class="text-text-secondary leading-relaxed">
+                        We view our clients as partners in the mission to secure the automotive future. Our success is measured by their success, and we're committed to their long-term cybersecurity objectives.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Recognition -->
+    <section class="bg-gradient-to-br from-primary-50 to-secondary-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-6">Industry Recognition</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Awards, certifications, and recognition that validate our leadership in automotive cybersecurity
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Award 1 -->
+                <div class="card p-6 text-center hover:scale-105 transition-smooth">
+                    <div class="w-16 h-16 bg-gradient-to-br from-warning to-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Cybersecurity Excellence Award</h3>
+                    <p class="text-text-secondary text-sm mb-2">Automotive News</p>
+                    <p class="text-text-secondary text-xs">2024</p>
+                </div>
+
+                <!-- Award 2 -->
+                <div class="card p-6 text-center hover:scale-105 transition-smooth">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary to-success rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">ASPICE Level 3 Certification</h3>
+                    <p class="text-text-secondary text-sm mb-2">Automotive SPICE</p>
+                    <p class="text-text-secondary text-xs">2023</p>
+                </div>
+
+                <!-- Award 3 -->
+                <div class="card p-6 text-center hover:scale-105 transition-smooth">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Innovation Leader</h3>
+                    <p class="text-text-secondary text-sm mb-2">Gartner Magic Quadrant</p>
+                    <p class="text-text-secondary text-xs">2024</p>
+                </div>
+
+                <!-- Award 4 -->
+                <div class="card p-6 text-center hover:scale-105 transition-smooth">
+                    <div class="w-16 h-16 bg-gradient-to-br from-accent to-warning rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Best AI Security Solution</h3>
+                    <p class="text-text-secondary text-sm mb-2">SC Media Awards</p>
+                    <p class="text-text-secondary text-xs">2024</p>
+                </div>
+            </div>
+
+            <!-- Speaking Engagements -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-primary text-center mb-8">Recent Speaking Engagements</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="card p-6">
+                        <h4 class="font-bold text-primary mb-2">RSA Conference 2024</h4>
+                        <p class="text-text-secondary text-sm mb-2">"AI-Powered Automotive Threat Detection"</p>
+                        <p class="text-text-secondary text-xs">Dr. Sarah Chen, CEO</p>
+                    </div>
+                    <div class="card p-6">
+                        <h4 class="font-bold text-primary mb-2">Automotive Cybersecurity Summit</h4>
+                        <p class="text-text-secondary text-sm mb-2">"Securing the Software-Defined Vehicle"</p>
+                        <p class="text-text-secondary text-xs">Marcus Rodriguez, CTO</p>
+                    </div>
+                    <div class="card p-6">
+                        <h4 class="font-bold text-primary mb-2">Black Hat USA 2024</h4>
+                        <p class="text-text-secondary text-sm mb-2">"Advanced Persistent Threats in Connected Vehicles"</p>
+                        <p class="text-text-secondary text-xs">Dr. Elena Kowalski, CSO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Culture -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-6">Our Culture of Excellence</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Fostering innovation, continuous learning, and collaboration in the rapidly evolving automotive cybersecurity landscape
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Culture Image -->
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1690192078982-d3d2f89059ee" 
+                         alt="DestroSolutions team collaboration in modern office environment showcasing automotive cybersecurity innovation and teamwork" 
+                         class="w-full h-auto rounded-lg shadow-elevation"
+                         onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                    <!-- Floating Culture Elements -->
+                    <div class="absolute -top-4 -right-4 bg-secondary text-white px-4 py-2 rounded-lg font-semibold">
+                        <span class="text-sm">Innovation First</span>
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-accent text-primary px-4 py-2 rounded-lg font-semibold">
+                        <span class="text-sm">Continuous Learning</span>
+                    </div>
+                </div>
+
+                <!-- Culture Content -->
+                <div>
+                    <div class="space-y-8">
+                        <!-- Innovation -->
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-secondary text-white rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-primary mb-2">Innovation-Driven Environment</h3>
+                                <p class="text-text-secondary">We encourage bold thinking and creative problem-solving. Our team has the freedom to explore new approaches to automotive cybersecurity challenges.</p>
+                            </div>
+                        </div>
+
+                        <!-- Learning -->
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-accent text-primary rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-primary mb-2">Continuous Learning Culture</h3>
+                                <p class="text-text-secondary">Regular training, conference attendance, and certification programs ensure our team stays at the forefront of automotive cybersecurity knowledge.</p>
+                            </div>
+                        </div>
+
+                        <!-- Collaboration -->
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-primary mb-2">Cross-Functional Collaboration</h3>
+                                <p class="text-text-secondary">Our diverse team of automotive engineers, cybersecurity experts, and AI specialists work together to create comprehensive solutions.</p>
+                            </div>
+                        </div>
+
+                        <!-- Work-Life Balance -->
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-success text-white rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-primary mb-2">Work-Life Integration</h3>
+                                <p class="text-text-secondary">We believe that well-rested, fulfilled team members produce the best work. Flexible schedules and comprehensive benefits support our team's well-being.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-gradient-to-r from-secondary to-accent py-20">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-white mb-6">
+                Join the Future of Automotive Cybersecurity
+            </h2>
+            <p class="text-xl text-white opacity-90 mb-8 max-w-2xl mx-auto">
+                Partner with the industry leaders who are defining the security standards for software-defined vehicles. Let's protect the automotive future together.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-secondary font-semibold py-4 px-8 rounded-lg transition-smooth hover:bg-primary-50 hover:text-primary">
+                    Start Partnership Discussion
+                </a>
+                <a href="interactive_demo_center.html" class="bg-transparent border-2 border-white text-white font-semibold py-4 px-8 rounded-lg transition-smooth hover:bg-white hover:text-secondary">
+                    Schedule Demo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <svg class="h-10 w-auto mr-3" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0" y="8" width="32" height="24" rx="4" fill="#38b2ac"/>
+                            <rect x="8" y="12" width="16" height="16" rx="2" fill="#4fd1c7"/>
+                            <path d="M16 16L20 20L16 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <text x="40" y="26" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="white">DestroSolutions</text>
+                        </svg>
+                    </div>
+                    <p class="text-primary-200 mb-6 max-w-md">
+                        The definitive automotive cybersecurity platform securing the software-defined vehicle revolution with AI-powered protection and industry-leading compliance.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Solutions</h3>
+                    <ul class="space-y-3">
+                        <li><a href="product_suite_overview.html" class="text-primary-300 hover:text-accent transition-smooth">Product Suite</a></li>
+                        <li><a href="standards_and_compliance.html" class="text-primary-300 hover:text-accent transition-smooth">Compliance</a></li>
+                        <li><a href="interactive_demo_center.html" class="text-primary-300 hover:text-accent transition-smooth">Demo Center</a></li>
+                        <li><a href="about.html" class="text-primary-300 hover:text-accent transition-smooth">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="text-primary-300">
+                            <span class="block">1-800-DESTRO-1</span>
+                            <span class="text-sm">(1-800-337-8761)</span>
+                        </li>
+                        <li class="text-primary-300">
+                            <span class="block">sales@destrosolutions.com</span>
+                        </li>
+                        <li class="text-primary-300">
+                            <span class="block">24/7 Security Operations</span>
+                            <span class="text-sm">soc@destrosolutions.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-primary-300 text-sm">
+                    © 2025 DestroSolutions. All Rights Reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-smooth text-sm">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-smooth text-sm">Terms of Service</a>
+                    <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-smooth text-sm">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Elements -->
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Timeline animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe timeline items
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

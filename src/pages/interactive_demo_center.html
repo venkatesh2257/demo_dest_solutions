@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Demo Center - DestroSolutions</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdestrosolu4102back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background font-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-card sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-auto" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0" y="8" width="32" height="24" rx="4" fill="#1a365d"/>
+                            <rect x="8" y="12" width="16" height="16" rx="2" fill="#38b2ac"/>
+                            <path d="M16 16L20 20L16 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <text x="40" y="26" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#1a365d">DestroSolutions</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">Home</a>
+                        <a href="about.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">About</a>
+                        <a href="product_suite_overview.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">Products</a>
+                        <a href="standards_and_compliance.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">Compliance</a>
+                        <a href="interactive_demo_center.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Demo</a>
+                        <a href="contact.html" class="btn-primary">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-silver-200">
+                <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth block px-3 py-2 rounded-md text-base">Home</a>
+                <a href="about.html" class="text-text-secondary hover:text-primary transition-smooth block px-3 py-2 rounded-md text-base">About</a>
+                <a href="product_suite_overview.html" class="text-text-secondary hover:text-primary transition-smooth block px-3 py-2 rounded-md text-base">Products</a>
+                <a href="standards_and_compliance.html" class="text-text-secondary hover:text-primary transition-smooth block px-3 py-2 rounded-md text-base">Compliance</a>
+                <a href="interactive_demo_center.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base">Demo</a>
+                <a href="contact.html" class="btn-primary w-full text-center mt-4">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Interactive Demo Flow Lines -->
+                <path d="M0 400 Q300 200 600 400 T1200 400" stroke="#38b2ac" stroke-width="2" opacity="0.6"/>
+                <path d="M0 300 Q400 100 800 300 T1200 300" stroke="#4fd1c7" stroke-width="1.5" opacity="0.4"/>
+                <path d="M0 500 Q200 300 600 500 T1200 500" stroke="#38b2ac" stroke-width="1" opacity="0.3"/>
+                <!-- Demo Interface Elements -->
+                <g transform="translate(100, 150)">
+                    <rect x="0" y="0" width="120" height="80" rx="8" stroke="#4fd1c7" stroke-width="2" fill="none" opacity="0.5"/>
+                    <circle cx="60" cy="40" r="20" stroke="#38b2ac" stroke-width="1.5" fill="none" opacity="0.4"/>
+                </g>
+                <g transform="translate(950, 200)">
+                    <rect x="0" y="0" width="100" height="60" rx="6" stroke="#4fd1c7" stroke-width="2" fill="none" opacity="0.4"/>
+                    <path d="M20 30 L40 20 L40 40 Z" fill="#38b2ac" opacity="0.6"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center text-white">
+                <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Experience
+                    <span class="text-accent">Automotive Security</span>
+                    In Action
+                </h1>
+                <p class="text-xl text-primary-100 mb-8 leading-relaxed max-w-3xl mx-auto">
+                    Explore our complete cybersecurity ecosystem through interactive demonstrations, virtual proof-of-concepts, and hands-on technical sandbox environments designed for automotive professionals.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="scrollToSection('live-demos')" class="btn-accent">
+                        Start Live Demo
+                    </button>
+                    <button onclick="scrollToSection('sandbox-access')" class="bg-transparent border-2 border-accent text-accent font-semibold py-3 px-6 rounded-lg transition-smooth hover:bg-accent hover:text-primary">
+                        Access Sandbox
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Navigation Dashboard -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Choose Your Demo Experience</h2>
+                <p class="text-text-secondary text-lg">Select the demonstration type that best fits your evaluation needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Live Product Demos -->
+                <div class="card p-8 text-center hover:scale-105 transition-smooth cursor-pointer" onclick="scrollToSection('live-demos')">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Live Product Demos</h3>
+                    <p class="text-text-secondary mb-6">Interactive demonstrations of all six security solutions with real-time functionality showcase.</p>
+                    <div class="text-secondary font-medium">
+                        <span>Explore Demos →</span>
+                    </div>
+                </div>
+
+                <!-- Virtual POCs -->
+                <div class="card p-8 text-center hover:scale-105 transition-smooth cursor-pointer" onclick="scrollToSection('virtual-pocs')">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Virtual POCs</h3>
+                    <p class="text-text-secondary mb-6">Proof-of-concept environments allowing hands-on experience with customized scenarios.</p>
+                    <div class="text-secondary font-medium">
+                        <span>Start POC →</span>
+                    </div>
+                </div>
+
+                <!-- Technical Sandbox -->
+                <div class="card p-8 text-center hover:scale-105 transition-smooth cursor-pointer" onclick="scrollToSection('sandbox-access')">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-accent to-success rounded-full mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Technical Sandbox</h3>
+                    <p class="text-text-secondary mb-6">Full-featured development environment for technical evaluation and integration testing.</p>
+                    <div class="text-secondary font-medium">
+                        <span>Access Sandbox →</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Product Demonstrations -->
+    <section id="live-demos" class="bg-gradient-to-br from-primary-50 to-secondary-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-6">Live Product Demonstrations</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Interactive showcases of our complete security ecosystem with real-time functionality
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Automator AI Demo -->
+                <div class="card p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">Automator AI</h3>
+                            <p class="text-text-secondary text-sm">Intelligent Threat Detection</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-primary-900 to-primary-800 rounded-lg p-6 mb-6">
+                        <img src="https://images.unsplash.com/photo-1557053198-a8c0fa8b6c12" 
+                             alt="AI-powered cybersecurity dashboard showing real-time threat detection and automated response systems for automotive networks" 
+                             class="w-full h-48 object-cover rounded-lg opacity-90"
+                             onerror="this.src='https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="mt-4 flex justify-between items-center">
+                            <div class="text-accent text-sm font-medium">Live Demo Available</div>
+                            <div class="flex space-x-2">
+                                <span class="w-2 h-2 bg-success rounded-full animate-pulse"></span>
+                                <span class="text-white text-xs">Active</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Real-time threat pattern recognition</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Automated incident response workflows</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Machine learning model training</span>
+                        </div>
+                    </div>
+                    
+                    <button onclick="startDemo('automator-ai')" class="btn-secondary w-full">
+                        Launch Interactive Demo
+                    </button>
+                </div>
+
+                <!-- IDPS Demo -->
+                <div class="card p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">IDPS</h3>
+                            <p class="text-text-secondary text-sm">Intrusion Detection & Prevention</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-primary-900 to-primary-800 rounded-lg p-6 mb-6">
+                        <img src="https://images.unsplash.com/photo-1604234761231-4bcf8f8b1435" 
+                             alt="Network security monitoring dashboard displaying intrusion detection patterns and prevention systems for automotive infrastructure" 
+                             class="w-full h-48 object-cover rounded-lg opacity-90"
+                             onerror="this.src='https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="mt-4 flex justify-between items-center">
+                            <div class="text-accent text-sm font-medium">Network Monitoring Active</div>
+                            <div class="flex space-x-2">
+                                <span class="w-2 h-2 bg-warning rounded-full animate-pulse"></span>
+                                <span class="text-white text-xs">Scanning</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">CAN bus traffic analysis</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Real-time intrusion blocking</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Behavioral anomaly detection</span>
+                        </div>
+                    </div>
+                    
+                    <button onclick="startDemo('idps')" class="btn-secondary w-full">
+                        Launch Interactive Demo
+                    </button>
+                </div>
+
+                <!-- AI Data Collector Demo -->
+                <div class="card p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-accent to-secondary rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">AI Data Collector</h3>
+                            <p class="text-text-secondary text-sm">Security Intelligence Platform</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-primary-900 to-primary-800 rounded-lg p-6 mb-6">
+                        <img src="https://images.unsplash.com/photo-1516383274235-5f42d6c6426d" 
+                             alt="Data analytics dashboard showing comprehensive security intelligence collection and analysis for automotive systems" 
+                             class="w-full h-48 object-cover rounded-lg opacity-90"
+                             onerror="this.src='https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="mt-4 flex justify-between items-center">
+                            <div class="text-accent text-sm font-medium">Data Streams Active</div>
+                            <div class="flex space-x-2">
+                                <span class="w-2 h-2 bg-success rounded-full animate-pulse"></span>
+                                <span class="text-white text-xs">Collecting</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Multi-source data aggregation</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Intelligent pattern analysis</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Predictive threat modeling</span>
+                        </div>
+                    </div>
+                    
+                    <button onclick="startDemo('ai-data-collector')" class="btn-secondary w-full">
+                        Launch Interactive Demo
+                    </button>
+                </div>
+
+                <!-- Additional Products Quick Access -->
+                <div class="card p-8 bg-gradient-to-br from-secondary-50 to-accent-50">
+                    <h3 class="text-xl font-bold text-primary mb-6">Additional Product Demos</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-4 bg-white rounded-lg border border-silver-200">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <span class="font-medium text-primary">SBOM</span>
+                            </div>
+                            <button onclick="startDemo('sbom')" class="text-secondary hover:text-secondary-700 transition-smooth">
+                                Demo →
+                            </button>
+                        </div>
+                        
+                        <div class="flex items-center justify-between p-4 bg-white rounded-lg border border-silver-200">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-secondary-600 rounded-lg flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <span class="font-medium text-primary">vSOC</span>
+                            </div>
+                            <button onclick="startDemo('vsoc')" class="text-secondary hover:text-secondary-700 transition-smooth">
+                                Demo →
+                            </button>
+                        </div>
+                        
+                        <div class="flex items-center justify-between p-4 bg-white rounded-lg border border-silver-200">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-success rounded-lg flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <span class="font-medium text-primary">OTA Updater</span>
+                            </div>
+                            <button onclick="startDemo('ota-updater')" class="text-secondary hover:text-secondary-700 transition-smooth">
+                                Demo →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual POCs Section -->
+    <section id="virtual-pocs" class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-6">Virtual Proof-of-Concepts</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Experience customized scenarios tailored to your specific automotive security challenges
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- POC Configuration Panel -->
+                <div class="card p-8">
+                    <h3 class="text-2xl font-bold text-primary mb-6">Configure Your POC Environment</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Vehicle Type Selection -->
+                        <div>
+                            <label class="block text-sm font-medium text-primary mb-2">Vehicle Type</label>
+                            <select class="input-field" id="vehicle-type">
+                                <option value="">Select Vehicle Type</option>
+                                <option value="passenger">Passenger Vehicle</option>
+                                <option value="commercial">Commercial Vehicle</option>
+                                <option value="autonomous">Autonomous Vehicle</option>
+                                <option value="electric">Electric Vehicle</option>
+                            </select>
+                        </div>
+
+                        <!-- Security Scenario -->
+                        <div>
+                            <label class="block text-sm font-medium text-primary mb-2">Security Scenario</label>
+                            <select class="input-field" id="security-scenario">
+                                <option value="">Select Scenario</option>
+                                <option value="can-intrusion">CAN Bus Intrusion</option>
+                                <option value="ota-attack">OTA Update Attack</option>
+                                <option value="ecu-compromise">ECU Compromise</option>
+                                <option value="network-breach">Network Breach</option>
+                            </select>
+                        </div>
+
+                        <!-- Compliance Framework -->
+                        <div>
+                            <label class="block text-sm font-medium text-primary mb-2">Compliance Framework</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2" value="aspice">
+                                    <span class="text-text-secondary">ASPICE Level 3</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2" value="autosar">
+                                    <span class="text-text-secondary">AUTOSAR</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2" value="csms">
+                                    <span class="text-text-secondary">CSMS</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Duration -->
+                        <div>
+                            <label class="block text-sm font-medium text-primary mb-2">POC Duration</label>
+                            <select class="input-field" id="poc-duration">
+                                <option value="">Select Duration</option>
+                                <option value="1-week">1 Week</option>
+                                <option value="2-weeks">2 Weeks</option>
+                                <option value="1-month">1 Month</option>
+                                <option value="custom">Custom Duration</option>
+                            </select>
+                        </div>
+
+                        <button onclick="initiatePOC()" class="btn-accent w-full">
+                            Initialize Virtual POC
+                        </button>
+                    </div>
+                </div>
+
+                <!-- POC Preview Dashboard -->
+                <div class="card p-8">
+                    <h3 class="text-2xl font-bold text-primary mb-6">POC Environment Preview</h3>
+                    
+                    <div class="bg-gradient-to-br from-primary-900 to-primary-800 rounded-lg p-6 mb-6">
+                        <img src="https://images.unsplash.com/photo-1655404716621-fc9082e6e133" 
+                             alt="Virtual automotive cybersecurity testing environment showing simulated vehicle networks and security monitoring interfaces" 
+                             class="w-full h-64 object-cover rounded-lg opacity-90"
+                             onerror="this.src='https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="mt-4 text-center">
+                            <div class="text-accent text-sm font-medium">Virtual Environment Ready</div>
+                        </div>
+                    </div>
+
+                    <!-- POC Features -->
+                    <div class="space-y-4">
+                        <div class="flex items-center p-3 bg-secondary-50 rounded-lg">
+                            <svg class="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-primary font-medium">Simulated Vehicle Networks</span>
+                        </div>
+                        
+                        <div class="flex items-center p-3 bg-accent-50 rounded-lg">
+                            <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-primary font-medium">Real Attack Scenarios</span>
+                        </div>
+                        
+                        <div class="flex items-center p-3 bg-success-50 rounded-lg">
+                            <svg class="w-5 h-5 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-primary font-medium">Compliance Validation</span>
+                        </div>
+                        
+                        <div class="flex items-center p-3 bg-primary-50 rounded-lg">
+                            <svg class="w-5 h-5 text-primary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-primary font-medium">Performance Metrics</span>
+                        </div>
+                    </div>
+
+                    <!-- Success Metrics -->
+                    <div class="mt-8 p-4 bg-gradient-to-r from-secondary-50 to-accent-50 rounded-lg">
+                        <h4 class="font-semibold text-primary mb-3">Expected POC Outcomes</h4>
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-secondary">95%</div>
+                                <div class="text-text-secondary">Threat Detection</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-accent">< 2s</div>
+                                <div class="text-text-secondary">Response Time</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Sandbox Access -->
+    <section id="sandbox-access" class="bg-gradient-to-br from-primary-50 to-secondary-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-6">Technical Sandbox Environment</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Full-featured development environment for hands-on evaluation and integration testing
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- API Testing Environment -->
+                <div class="card p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary">API Testing</h3>
+                    </div>
+                    
+                    <div class="bg-primary-900 rounded-lg p-4 mb-6 font-technical text-sm">
+                        <div class="text-accent mb-2">$ curl -X GET \</div>
+                        <div class="text-white">  https://api.destro.dev/v1/threats \</div>
+                        <div class="text-white">  -H "Authorization: Bearer demo_token"</div>
+                        <div class="text-success mt-2">✓ 200 OK - 47 active threats detected</div>
+                    </div>
+                    
+                    <ul class="space-y-2 mb-6 text-sm">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">RESTful API endpoints</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">WebSocket connections</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">SDK libraries</span>
+                        </li>
+                    </ul>
+                    
+                    <button onclick="accessSandbox('api')" class="btn-secondary w-full">
+                        Access API Sandbox
+                    </button>
+                </div>
+
+                <!-- Integration Testing -->
+                <div class="card p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary">Integration Testing</h3>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-secondary-900 to-accent-800 rounded-lg p-6 mb-6">
+                        <img src="https://images.unsplash.com/photo-1706899963791-519e86a93c1d" 
+                             alt="Software integration testing environment showing code deployment and system connectivity for automotive security platforms" 
+                             class="w-full h-32 object-cover rounded-lg opacity-90"
+                             onerror="this.src='https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                    </div>
+                    
+                    <ul class="space-y-2 mb-6 text-sm">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Docker containers</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">CI/CD pipelines</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Test automation</span>
+                        </li>
+                    </ul>
+                    
+                    <button onclick="accessSandbox('integration')" class="btn-secondary w-full">
+                        Launch Test Environment
+                    </button>
+                </div>
+
+                <!-- Performance Benchmarking -->
+                <div class="card p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-accent to-success rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary">Performance Testing</h3>
+                    </div>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary text-sm">Threat Detection Speed</span>
+                            <span class="text-success font-semibold">< 50ms</span>
+                        </div>
+                        <div class="w-full bg-silver-200 rounded-full h-2">
+                            <div class="bg-success h-2 rounded-full" style="width: 95%"></div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary text-sm">System Throughput</span>
+                            <span class="text-accent font-semibold">10K req/s</span>
+                        </div>
+                        <div class="w-full bg-silver-200 rounded-full h-2">
+                            <div class="bg-accent h-2 rounded-full" style="width: 88%"></div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary text-sm">Memory Usage</span>
+                            <span class="text-secondary font-semibold">< 2GB</span>
+                        </div>
+                        <div class="w-full bg-silver-200 rounded-full h-2">
+                            <div class="bg-secondary h-2 rounded-full" style="width: 72%"></div>
+                        </div>
+                    </div>
+                    
+                    <button onclick="accessSandbox('performance')" class="btn-secondary w-full">
+                        Run Benchmarks
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator & Assessment Tools -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-6">Interactive Assessment Tools</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Quantify the value and impact of implementing DestroSolutions in your environment
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- ROI Calculator -->
+                <div class="card p-8">
+                    <h3 class="text-2xl font-bold text-primary mb-6">ROI Calculator</h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-primary mb-2">Fleet Size</label>
+                            <input type="number" class="input-field" id="fleet-size" placeholder="Number of vehicles" onchange="calculateROI()">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-primary mb-2">Current Security Budget (Annual)</label>
+                            <input type="number" class="input-field" id="security-budget" placeholder="USD" onchange="calculateROI()">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-primary mb-2">Incident Response Cost (Per Event)</label>
+                            <input type="number" class="input-field" id="incident-cost" placeholder="USD" onchange="calculateROI()">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-primary mb-2">Compliance Requirements</label>
+                            <select class="input-field" id="compliance-level" onchange="calculateROI()">
+                                <option value="">Select Level</option>
+                                <option value="basic">Basic Compliance</option>
+                                <option value="advanced">Advanced (ASPICE L3)</option>
+                                <option value="premium">Premium (Full Stack)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- ROI Results -->
+                    <div id="roi-results" class="mt-8 p-6 bg-gradient-to-br from-success-50 to-accent-50 rounded-lg hidden">
+                        <h4 class="font-bold text-primary mb-4">Projected ROI Analysis</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-success" id="roi-percentage">0%</div>
+                                <div class="text-text-secondary text-sm">3-Year ROI</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-accent" id="cost-savings">$0</div>
+                                <div class="text-text-secondary text-sm">Annual Savings</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <div class="text-2xl font-bold text-secondary" id="payback-period">0</div>
+                            <div class="text-text-secondary text-sm">Months to Payback</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compliance Assessment -->
+                <div class="card p-8">
+                    <h3 class="text-2xl font-bold text-primary mb-6">Compliance Assessment</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- ASPICE Assessment -->
+                        <div class="p-4 border border-silver-200 rounded-lg">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="font-semibold text-primary">ASPICE Readiness</h4>
+                                <span class="text-warning font-medium">Level 2</span>
+                            </div>
+                            <div class="w-full bg-silver-200 rounded-full h-2 mb-2">
+                                <div class="bg-warning h-2 rounded-full" style="width: 65%"></div>
+                            </div>
+                            <p class="text-text-secondary text-sm">Process improvement needed for Level 3 certification</p>
+                        </div>
+                        
+                        <!-- AUTOSAR Assessment -->
+                        <div class="p-4 border border-silver-200 rounded-lg">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="font-semibold text-primary">AUTOSAR Compliance</h4>
+                                <span class="text-success font-medium">Compliant</span>
+                            </div>
+                            <div class="w-full bg-silver-200 rounded-full h-2 mb-2">
+                                <div class="bg-success h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                            <p class="text-text-secondary text-sm">Architecture standards fully implemented</p>
+                        </div>
+                        
+                        <!-- CSMS Assessment -->
+                        <div class="p-4 border border-silver-200 rounded-lg">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="font-semibold text-primary">CSMS Framework</h4>
+                                <span class="text-error font-medium">Gap Analysis</span>
+                            </div>
+                            <div class="w-full bg-silver-200 rounded-full h-2 mb-2">
+                                <div class="bg-error h-2 rounded-full" style="width: 45%"></div>
+                            </div>
+                            <p class="text-text-secondary text-sm">Cybersecurity management system requires enhancement</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-4 bg-primary-50 rounded-lg">
+                        <h4 class="font-semibold text-primary mb-2">Recommended Actions</h4>
+                        <ul class="space-y-2 text-sm text-text-secondary">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Implement comprehensive CSMS framework
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Upgrade ASPICE processes to Level 3
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Deploy integrated security monitoring
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <button onclick="generateAssessmentReport()" class="btn-accent w-full mt-6">
+                        Generate Full Assessment Report
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Booking & Contact -->
+    <section class="bg-gradient-to-r from-secondary to-accent py-20">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-white mb-6">
+                Ready for a Personalized Demonstration?
+            </h2>
+            <p class="text-xl text-white opacity-90 mb-8 max-w-2xl mx-auto">
+                Schedule a customized demo with our automotive cybersecurity experts and see how DestroSolutions can secure your software-defined vehicles.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <!-- Scheduled Demo -->
+                <div class="bg-white rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-primary mb-4">Schedule Live Demo</h3>
+                    <p class="text-text-secondary mb-4">Book a personalized demonstration with our technical team</p>
+                    <button onclick="openDemoBooking()" class="btn-secondary w-full">
+                        Book Demo Session
+                    </button>
+                </div>
+                
+                <!-- Immediate Contact -->
+                <div class="bg-white rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-primary mb-4">Speak with Expert</h3>
+                    <p class="text-text-secondary mb-4">Connect immediately with our automotive security specialists</p>
+                    <a href="contact.html" class="btn-primary w-full inline-block">
+                        Contact Sales Team
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-white opacity-75 text-sm">
+                <p>Available Monday-Friday, 8AM-6PM EST | Emergency support: 24/7</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <svg class="h-10 w-auto mr-3" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0" y="8" width="32" height="24" rx="4" fill="#38b2ac"/>
+                            <rect x="8" y="12" width="16" height="16" rx="2" fill="#4fd1c7"/>
+                            <path d="M16 16L20 20L16 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <text x="40" y="26" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="white">DestroSolutions</text>
+                        </svg>
+                    </div>
+                    <p class="text-primary-200 mb-6 max-w-md">
+                        The definitive automotive cybersecurity platform securing the software-defined vehicle revolution with AI-powered protection and industry-leading compliance.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Solutions</h3>
+                    <ul class="space-y-3">
+                        <li><a href="product_suite_overview.html" class="text-primary-300 hover:text-accent transition-smooth">Product Suite</a></li>
+                        <li><a href="standards_and_compliance.html" class="text-primary-300 hover:text-accent transition-smooth">Compliance</a></li>
+                        <li><a href="interactive_demo_center.html" class="text-primary-300 hover:text-accent transition-smooth">Demo Center</a></li>
+                        <li><a href="about.html" class="text-primary-300 hover:text-accent transition-smooth">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="text-primary-300">
+                            <span class="block">1-800-DESTRO-1</span>
+                            <span class="text-sm">(1-800-337-8761)</span>
+                        </li>
+                        <li class="text-primary-300">
+                            <span class="block">sales@destrosolutions.com</span>
+                        </li>
+                        <li class="text-primary-300">
+                            <span class="block">24/7 Security Operations</span>
+                            <span class="text-sm">soc@destrosolutions.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-primary-300 text-sm">
+                    © 2025 DestroSolutions. All Rights Reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-smooth text-sm">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-smooth text-sm">Terms of Service</a>
+                    <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-smooth text-sm">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Elements -->
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Smooth scrolling to sections
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Demo launch functions
+        function startDemo(productType) {
+            // Simulate demo launch
+            alert(`Launching ${productType.toUpperCase()} interactive demo...`);
+            // In real implementation, this would open the demo interface
+        }
+
+        // POC initiation
+        function initiatePOC() {
+            const vehicleType = document.getElementById('vehicle-type').value;
+            const scenario = document.getElementById('security-scenario').value;
+            const duration = document.getElementById('poc-duration').value;
+            
+            if (!vehicleType || !scenario || !duration) {
+                alert('Please complete all POC configuration fields');
+                return;
+            }
+            
+            alert(`Initializing Virtual POC for ${vehicleType} with ${scenario} scenario for ${duration}...`);
+            // In real implementation, this would set up the POC environment
+        }
+
+        // Sandbox access functions
+        function accessSandbox(type) {
+            alert(`Accessing ${type} sandbox environment...`);
+            // In real implementation, this would open the sandbox interface
+        }
+
+        // ROI Calculator
+        function calculateROI() {
+            const fleetSize = parseInt(document.getElementById('fleet-size').value) || 0;
+            const securityBudget = parseInt(document.getElementById('security-budget').value) || 0;
+            const incidentCost = parseInt(document.getElementById('incident-cost').value) || 0;
+            const complianceLevel = document.getElementById('compliance-level').value;
+            
+            if (fleetSize > 0 && securityBudget > 0) {
+                // Simplified ROI calculation
+                const estimatedSavings = Math.floor(securityBudget * 0.35 + (incidentCost * 0.85 * 12));
+                const roiPercentage = Math.floor((estimatedSavings / securityBudget) * 100);
+                const paybackMonths = Math.ceil(securityBudget / (estimatedSavings / 12));
+                
+                document.getElementById('roi-percentage').textContent = roiPercentage + '%';
+                document.getElementById('cost-savings').textContent = '$' + estimatedSavings.toLocaleString();
+                document.getElementById('payback-period').textContent = paybackMonths;
+                
+                document.getElementById('roi-results').classList.remove('hidden');
+            }
+        }
+
+        // Assessment report generation
+        function generateAssessmentReport() {
+            alert('Generating comprehensive compliance assessment report...');
+            // In real implementation, this would generate and download a PDF report
+        }
+
+        // Demo booking
+        function openDemoBooking() {
+            alert('Opening demo booking calendar...');
+            // In real implementation, this would open a calendar booking interface
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add any initialization code here
+            console.log('Interactive Demo Center loaded successfully');
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

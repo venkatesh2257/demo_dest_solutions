@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Admin Panel - Demo</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+        .admin-panel {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .color-control {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+        }
+        .color-control label {
+            font-weight: 600;
+            flex: 1;
+        }
+        .color-control input[type="color"] {
+            width: 80px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .color-control input[type="text"] {
+            margin: 0 10px;
+            padding: 8px;
+            width: 100px;
+            border: 1px solid #E0E0E0;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+        .demo-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: var(--color-bg);
+            border-radius: 10px;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .status-message {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            display: none;
+        }
+        .status-message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .status-message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-panel">
+        <h1>🎨 Color Admin Panel</h1>
+        <p style="color: #666; margin-bottom: 30px;">
+            Control your entire website's color theme from here. Changes apply instantly across all pages!
+        </p>
+
+        <div id="statusMessage" class="status-message"></div>
+
+        <!-- Primary Color -->
+        <div class="color-control">
+            <label for="primaryColor">
+                Primary Color
+                <small style="display: block; color: #666; font-weight: normal;">
+                    Buttons, headings, links, icons
+                </small>
+            </label>
+            <input type="text" id="primaryColorText" value="#1612FF" maxlength="7">
+            <input type="color" id="primaryColor" value="#1612FF">
+        </div>
+
+        <!-- Background Color -->
+        <div class="color-control">
+            <label for="bgColor">
+                Background Color
+                <small style="display: block; color: #666; font-weight: normal;">
+                    Page background
+                </small>
+            </label>
+            <input type="text" id="bgColorText" value="#F6F6F6" maxlength="7">
+            <input type="color" id="bgColor" value="#F6F6F6">
+        </div>
+
+        <!-- Text Color -->
+        <div class="color-control">
+            <label for="textColor">
+                Text Color
+                <small style="display: block; color: #666; font-weight: normal;">
+                    Normal text
+                </small>
+            </label>
+            <input type="text" id="textColorText" value="#000000" maxlength="7">
+            <input type="color" id="textColor" value="#000000">
+        </div>
+
+        <!-- Border Color -->
+        <div class="color-control">
+            <label for="borderColor">
+                Border Color
+                <small style="display: block; color: #666; font-weight: normal;">
+                    Cards, inputs, separators
+                </small>
+            </label>
+            <input type="text" id="borderColorText" value="#E0E0E0" maxlength="7">
+            <input type="color" id="borderColor" value="#E0E0E0">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn-primary" onclick="applyColors()">✅ Apply Changes</button>
+            <button class="btn-secondary" onclick="resetColors()">🔄 Reset to Defaults</button>
+            <button class="btn-accent" onclick="saveToBackend()">💾 Save to Backend</button>
+        </div>
+
+        <!-- Demo Section -->
+        <div class="demo-section">
+            <h2>Live Preview</h2>
+            <p>This is how your text will look with the current settings.</p>
+            
+            <div style="margin: 20px 0;">
+                <button class="btn-primary" style="margin-right: 10px;">Primary Button</button>
+                <button class="btn-secondary">Secondary Button</button>
+            </div>
+
+            <div class="card" style="padding: 20px; margin: 20px 0;">
+                <h3>Card Example</h3>
+                <p>This is a card component with your theme colors applied.</p>
+                <input type="text" class="input-field" placeholder="Input field example">
+            </div>
+
+            <a href="#" style="display: inline-block; margin: 10px 0;">Example link</a>
+        </div>
+
+        <!-- Code Preview -->
+        <div style="margin-top: 30px;">
+            <h3>CSS Variables (Current Values)</h3>
+            <pre id="cssPreview" style="background: #f5f5f5; padding: 15px; border-radius: 5px; overflow-x: auto;"></pre>
+        </div>
+
+        <!-- Back to Site -->
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="homepage.html" style="color: var(--color-primary); font-weight: 600;">
+                ← Back to Website
+            </a>
+        </div>
+    </div>
+
+    <!-- Theme Controller -->
+    <script src="../js/theme-controller.js"></script>
+
+    <script>
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCSSPreview();
+            syncInputs();
+        });
+
+        // Sync color picker with text input
+        ['primary', 'bg', 'text', 'border'].forEach(color => {
+            const picker = document.getElementById(color + 'Color');
+            const text = document.getElementById(color + 'ColorText');
+            
+            picker.addEventListener('input', (e) => {
+                text.value = e.target.value.toUpperCase();
+            });
+            
+            text.addEventListener('input', (e) => {
+                if (/^#[0-9A-F]{6}$/i.test(e.target.value)) {
+                    picker.value = e.target.value;
+                }
+            });
+        });
+
+        function applyColors() {
+            const colors = {
+                primary: document.getElementById('primaryColor').value,
+                bg: document.getElementById('bgColor').value,
+                text: document.getElementById('textColor').value,
+            };
+
+            // Apply via theme controller
+            updateThemeColors(colors);
+            
+            // Also update border
+            document.documentElement.style.setProperty('--color-border', 
+                document.getElementById('borderColor').value
+            );
+
+            updateCSSPreview();
+            showStatus('Colors applied successfully!', 'success');
+        }
+
+        function resetColors() {
+            // Reset to defaults
+            themeController.resetToDefaults();
+            
+            // Reset inputs
+            document.getElementById('primaryColor').value = '#1612FF';
+            document.getElementById('primaryColorText').value = '#1612FF';
+            document.getElementById('bgColor').value = '#F6F6F6';
+            document.getElementById('bgColorText').value = '#F6F6F6';
+            document.getElementById('textColor').value = '#000000';
+            document.getElementById('textColorText').value = '#000000';
+            document.getElementById('borderColor').value = '#E0E0E0';
+            document.getElementById('borderColorText').value = '#E0E0E0';
+            
+            updateCSSPreview();
+            showStatus('Colors reset to defaults', 'success');
+        }
+
+        async function saveToBackend() {
+            const colors = {
+                primary: document.getElementById('primaryColor').value,
+                bg: document.getElementById('bgColor').value,
+                text: document.getElementById('textColor').value,
+                border: document.getElementById('borderColor').value,
+            };
+
+            // This is where you'd connect to your Laravel backend
+            // Example:
+            /*
+            const response = await themeController.saveColorsToAPI(
+                '/api/theme/save',
+                colors
+            );
+            */
+
+            // For now, just save to localStorage
+            localStorage.setItem('adminColors', JSON.stringify(colors));
+            showStatus('Colors saved! (Currently to localStorage only - connect to your backend API)', 'success');
+            
+            console.log('Would save these colors to backend:', colors);
+            console.log('Connect this to your Laravel API at /api/theme/save');
+        }
+
+        function syncInputs() {
+            // Load current values
+            const primary = themeController.getColor('primary') || '#1612FF';
+            const bg = themeController.getColor('bg') || '#F6F6F6';
+            const text = themeController.getColor('text') || '#000000';
+            const border = getComputedStyle(document.documentElement).getPropertyValue('--color-border').trim() || '#E0E0E0';
+
+            document.getElementById('primaryColor').value = primary;
+            document.getElementById('primaryColorText').value = primary;
+            document.getElementById('bgColor').value = bg;
+            document.getElementById('bgColorText').value = bg;
+            document.getElementById('textColor').value = text;
+            document.getElementById('textColorText').value = text;
+            document.getElementById('borderColor').value = border;
+            document.getElementById('borderColorText').value = border;
+        }
+
+        function updateCSSPreview() {
+            const styles = getComputedStyle(document.documentElement);
+            const preview = `
+:root {
+  --color-bg: ${styles.getPropertyValue('--color-bg').trim()};
+  --color-primary: ${styles.getPropertyValue('--color-primary').trim()};
+  --color-primary-hover: ${styles.getPropertyValue('--color-primary-hover').trim()};
+  --color-primary-active: ${styles.getPropertyValue('--color-primary-active').trim()};
+  --color-text: ${styles.getPropertyValue('--color-text').trim()};
+  --color-white: ${styles.getPropertyValue('--color-white').trim()};
+  --color-border: ${styles.getPropertyValue('--color-border').trim()};
+}`;
+            document.getElementById('cssPreview').textContent = preview;
+        }
+
+        function showStatus(message, type) {
+            const statusEl = document.getElementById('statusMessage');
+            statusEl.textContent = message;
+            statusEl.className = 'status-message ' + type;
+            statusEl.style.display = 'block';
+            
+            setTimeout(() => {
+                statusEl.style.display = 'none';
+            }, 3000);
+        }
+
+        // Console helper
+        console.log('%c🎨 Color Admin Panel Ready!', 'color: #1612FF; font-size: 16px; font-weight: bold;');
+        console.log('Try in console: updateThemeColors({ primary: "#FF0000" })');
+    </script>
+</body>
+</html>
+

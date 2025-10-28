@@ -11,19 +11,19 @@
   <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdestrosolu4102back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
   <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
   </head>
-<body class="bg-background font-primary">
+<body class="font-primary">
     <!-- Navigation Header -->
-    <nav class="bg-white shadow-card sticky top-0 z-50">
+    <nav class="shadow-card sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
                         <svg class="h-10 w-auto" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0" y="8" width="32" height="24" rx="4" fill="#1a365d"/>
-                            <rect x="8" y="12" width="16" height="16" rx="2" fill="#38b2ac"/>
-                            <path d="M16 16L20 20L16 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <text x="40" y="26" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#1a365d">DestroSolutions</text>
+                            <rect x="0" y="8" width="32" height="24" rx="4"/>
+                            <rect x="8" y="12" width="16" height="16" rx="2"/>
+                            <path d="M16 16L20 20L16 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <text x="40" y="26" font-family="Inter, sans-serif" font-size="18" font-weight="700">DestroSolutions</text>
                         </svg>
                     </div>
                 </div>
@@ -31,18 +31,18 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="homepage.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Home</a>
-                        <a href="about.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">About</a>
-                        <a href="product_suite_overview.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">Products</a>
-                        <a href="standards_and_compliance.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">Compliance</a>
-                        <a href="interactive_demo_center.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">Demo</a>
+                        <a href="homepage.html" class="font-semibold px-3 py-2 rounded-md text-sm">Home</a>
+                        <a href="about.html" class="transition-smooth px-3 py-2 rounded-md text-sm">About</a>
+                        <a href="product_suite_overview.html" class="transition-smooth px-3 py-2 rounded-md text-sm">Products</a>
+                        <a href="standards_and_compliance.html" class="transition-smooth px-3 py-2 rounded-md text-sm">Compliance</a>
+                        <a href="interactive_demo_center.html" class="transition-smooth px-3 py-2 rounded-md text-sm">Demo</a>
                         <a href="contact.html" class="btn-primary">Contact</a>
                     </div>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
-                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
+                    <button type="button" class="focus:outline-none" onclick="toggleMobileMenu()">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -53,30 +53,30 @@
 
         <!-- Mobile Navigation Menu -->
         <div id="mobile-menu" class="md:hidden hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-silver-200">
-                <a href="homepage.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base">Home</a>
-                <a href="about.html" class="text-text-secondary hover:text-primary transition-smooth block px-3 py-2 rounded-md text-base">About</a>
-                <a href="product_suite_overview.html" class="text-text-secondary hover:text-primary transition-smooth block px-3 py-2 rounded-md text-base">Products</a>
-                <a href="standards_and_compliance.html" class="text-text-secondary hover:text-primary transition-smooth block px-3 py-2 rounded-md text-base">Compliance</a>
-                <a href="interactive_demo_center.html" class="text-text-secondary hover:text-primary transition-smooth block px-3 py-2 rounded-md text-base">Demo</a>
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t">
+                <a href="homepage.html" class="font-semibold block px-3 py-2 rounded-md text-base">Home</a>
+                <a href="about.html" class="transition-smooth block px-3 py-2 rounded-md text-base">About</a>
+                <a href="product_suite_overview.html" class="transition-smooth block px-3 py-2 rounded-md text-base">Products</a>
+                <a href="standards_and_compliance.html" class="transition-smooth block px-3 py-2 rounded-md text-base">Compliance</a>
+                <a href="interactive_demo_center.html" class="transition-smooth block px-3 py-2 rounded-md text-base">Demo</a>
                 <a href="contact.html" class="btn-primary w-full text-center mt-4">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section - Software-Defined Vehicle Aesthetic -->
-    <section class="relative bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 overflow-hidden">
+    <section class="relative overflow-hidden">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-10">
             <svg class="w-full h-full" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- Data Flow Lines -->
-                <path d="M0 400 Q300 200 600 400 T1200 400" stroke="#38b2ac" stroke-width="2" opacity="0.6"/>
-                <path d="M0 300 Q400 100 800 300 T1200 300" stroke="#4fd1c7" stroke-width="1.5" opacity="0.4"/>
-                <path d="M0 500 Q200 300 600 500 T1200 500" stroke="#38b2ac" stroke-width="1" opacity="0.3"/>
+                <path d="M0 400 Q300 200 600 400 T1200 400" stroke-width="2" opacity="0.6"/>
+                <path d="M0 300 Q400 100 800 300 T1200 300" stroke-width="1.5" opacity="0.4"/>
+                <path d="M0 500 Q200 300 600 500 T1200 500" stroke-width="1" opacity="0.3"/>
                 <!-- Security Shield Pattern -->
                 <g transform="translate(900, 100)">
-                    <path d="M50 20 L80 35 L80 65 L50 80 L20 65 L20 35 Z" stroke="#4fd1c7" stroke-width="2" fill="none" opacity="0.5"/>
-                    <circle cx="50" cy="50" r="15" stroke="#38b2ac" stroke-width="1.5" fill="none" opacity="0.4"/>
+                    <path d="M50 20 L80 35 L80 65 L50 80 L20 65 L20 35 Z" stroke-width="2" fill="none" opacity="0.5"/>
+                    <circle cx="50" cy="50" r="15" stroke-width="1.5" fill="none" opacity="0.4"/>
                 </g>
             </svg>
         </div>
@@ -84,20 +84,20 @@
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Hero Content -->
-                <div class="text-white">
+                <div>
                     <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                         Securing the
-                        <span class="text-accent">Software-Defined</span>
+                        <span>Software-Defined</span>
                         Vehicle Revolution
                     </h1>
-                    <p class="text-xl text-primary-100 mb-8 leading-relaxed">
+                    <p class="text-xl mb-8 leading-relaxed">
                         The definitive automotive cybersecurity platform combining AI-powered threat detection with industry-leading compliance standards to protect connected vehicles at scale.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="interactive_demo_center.html" class="btn-accent text-center">
                             Request Live Demo
                         </a>
-                        <a href="product_suite_overview.html" class="bg-transparent border-2 border-accent text-accent font-semibold py-3 px-6 rounded-lg transition-smooth hover:bg-accent hover:text-primary text-center">
+                        <a href="product_suite_overview.html" class="border-2 font-semibold py-3 px-6 rounded-lg transition-smooth text-center">
                             Explore Solutions
                         </a>
                     </div>
@@ -112,10 +112,10 @@
                              onerror="this.src='https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
                     </div>
                     <!-- Floating Security Elements -->
-                    <div class="absolute -top-4 -right-4 bg-accent text-primary px-4 py-2 rounded-lg font-semibold animate-pulse">
+                    <div class="absolute -top-4 -right-4 px-4 py-2 rounded-lg font-semibold animate-pulse">
                         <span class="text-sm">AI Protected</span>
                     </div>
-                    <div class="absolute -bottom-4 -left-4 bg-secondary text-white px-4 py-2 rounded-lg font-semibold">
+                    <div class="absolute -bottom-4 -left-4 px-4 py-2 rounded-lg font-semibold">
                         <span class="text-sm">ASPICE Certified</span>
                     </div>
                 </div>
@@ -124,57 +124,57 @@
     </section>
 
     <!-- Real-Time Deployment Counter Dashboard -->
-    <section class="bg-white py-16">
+    <section class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-primary mb-4">Global Impact Metrics</h2>
-                <p class="text-text-secondary text-lg">Real-time protection across the automotive ecosystem</p>
+                <h2 class="text-3xl font-bold mb-4">Global Impact Metrics</h2>
+                <p class="text-lg">Real-time protection across the automotive ecosystem</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Vehicles Protected -->
-                <div class="text-center p-8 bg-gradient-to-br from-secondary-50 to-secondary-100 rounded-xl">
-                    <div class="inline-flex items-center justify-center w-16 h-16 bg-secondary text-white rounded-full mb-4">
+                <div class="text-center p-8 rounded-xl">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4">
                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
                             <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1V8a1 1 0 00-1-1h-3z"/>
                         </svg>
                     </div>
-                    <div class="text-4xl font-bold text-primary mb-2" id="vehicles-counter">2,847,392</div>
-                    <div class="text-text-secondary font-medium">Vehicles Protected</div>
+                    <div class="text-4xl font-bold mb-2" id="vehicles-counter">2,847,392</div>
+                    <div class="font-medium">Vehicles Protected</div>
                 </div>
 
                 <!-- Threats Prevented -->
-                <div class="text-center p-8 bg-gradient-to-br from-accent-50 to-accent-100 rounded-xl">
-                    <div class="inline-flex items-center justify-center w-16 h-16 bg-accent text-primary rounded-full mb-4">
+                <div class="text-center p-8 rounded-xl">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4">
                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                         </svg>
                     </div>
-                    <div class="text-4xl font-bold text-primary mb-2" id="threats-counter">15,923,847</div>
-                    <div class="text-text-secondary font-medium">Threats Prevented</div>
+                    <div class="text-4xl font-bold mb-2" id="threats-counter">15,923,847</div>
+                    <div class="font-medium">Threats Prevented</div>
                 </div>
 
                 <!-- Compliance Audits -->
-                <div class="text-center p-8 bg-gradient-to-br from-success-50 to-success-100 rounded-xl">
-                    <div class="inline-flex items-center justify-center w-16 h-16 bg-success text-white rounded-full mb-4">
+                <div class="text-center p-8 rounded-xl">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4">
                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                         </svg>
                     </div>
-                    <div class="text-4xl font-bold text-primary mb-2" id="audits-counter">98,247</div>
-                    <div class="text-text-secondary font-medium">Compliance Audits Passed</div>
+                    <div class="text-4xl font-bold mb-2" id="audits-counter">98,247</div>
+                    <div class="font-medium">Compliance Audits Passed</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Interactive Product Ecosystem Map -->
-    <section class="bg-gradient-to-br from-primary-50 to-secondary-50 py-20">
+    <section class="py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-primary mb-6">Complete Security Ecosystem</h2>
-                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-6">Complete Security Ecosystem</h2>
+                <p class="text-xl max-w-3xl mx-auto">
                     Six integrated solutions working in harmony to create an impenetrable defense for software-defined vehicles
                 </p>
             </div>
@@ -183,7 +183,7 @@
                 <!-- Automator AI -->
                 <div class="card p-8 hover:scale-105 transition-smooth cursor-pointer group" onclick="window.location.href='product_suite_overview.html'">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center mr-4">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-4">
                             <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
                             </svg>
@@ -202,7 +202,7 @@
                 <!-- IDPS -->
                 <div class="card p-8 hover:scale-105 transition-smooth cursor-pointer group" onclick="window.location.href='product_suite_overview.html'">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mr-4">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-4">
                             <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
@@ -221,7 +221,7 @@
                 <!-- AI Data Collector -->
                 <div class="card p-8 hover:scale-105 transition-smooth cursor-pointer group" onclick="window.location.href='product_suite_overview.html'">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-gradient-to-br from-accent to-secondary rounded-lg flex items-center justify-center mr-4">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-4">
                             <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
                             </svg>
@@ -493,7 +493,7 @@
                          onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=2'; this.onerror=null;">
                     <div class="text-left">
                         <p class="font-semibold text-primary">Dr. Michael Chen</p>
-                        <p class="text-text-secondary">Chief Security Officer, Premium Automotive Group</p>
+                        <p class="">Chief Security Officer, Premium Automotive Group</p>
                     </div>
                 </div>
             </div>
@@ -646,6 +646,13 @@
             });
         });
     </script>
+
+    <!-- Dynamic Theme Controller - Admin Panel Ready -->
+    <script src="../js/theme-controller.js"></script>
+    
+    <!-- Test the theme controller in console:
+         updateThemeColors({ primary: '#FF0000' }) 
+    -->
 <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
 </body>
 </html>
